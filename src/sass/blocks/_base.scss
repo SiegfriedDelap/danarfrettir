@@ -1,0 +1,169 @@
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-size: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: $f-primary;
+    @include font-size($baseFontSize);
+    @include line-height($baseLineHeight);
+    font-weight: 400;
+    color: $c-blue;
+
+}
+
+
+/********************
+** Colors
+********************/
+
+.bg-blue{
+    @include background-opacity($c-blue, 0.75);
+}
+
+.green-text{
+    color: $c-green;
+}
+
+
+ 
+
+
+
+/********************
+** Typography
+********************/
+
+h1{
+    font-family: $f-secondary;
+    font-weight: 800;
+    font-style: italic;
+    @include font-size(46);
+    @include line-height(55);
+}
+
+h2{
+    font-family: $f-secondary;
+    font-weight: 800;
+    font-style: italic;
+    @include font-size(32);
+    @include line-height(38);
+}
+
+h3{
+    font-family: $f-secondary;
+    font-weight: 800;
+    @include font-size(24);
+    @include line-height(38);
+}
+
+p{
+    font-family: $f-primary;
+    font-weight: 400;
+    @include font-size(16);
+    @include line-height(26);
+}
+
+
+/********************
+** Something with bootstrap
+********************/
+
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.green-btn{
+	border-color: $c-green;
+    color: $c-green;
+    &:hover, &:active, &:visited{
+        color: $c-blue;
+        background-color: transparent;
+        border-color: $c-blue;
+    }
+    &:focus{
+        box-shadow: 0 0 0 0.25rem rgba(185, 173, 126, 0.15);
+    }
+    &:active:focus{
+        box-shadow: 0 0 0 0.25rem rgba(185, 173, 126, 0.15);
+    }
+    &-active{
+        background-color: $c-green;
+        color:$c-white;
+        border-color: $c-green;
+        &:hover, &:active, &:visited{
+            color: $c-blue;
+            background-color: $c-greenLight;
+            border-color: $c-blue;
+        }
+        &:focus{
+            box-shadow: 0 0 0 0.25rem rgba(185, 173, 126, 0.15);
+        }
+        &:active:focus{
+            box-shadow: 0 0 0 0.25rem rgba(185, 173, 126, 0.15);
+        }
+    }
+}
+
+.dropdown{
+    button::after{
+        content: url(../icons/shevron-down.svg);
+        border: 0;
+        vertical-align: 0;
+        margin-left: 10px;
+    }
+}
+
+.btn-outline-primary.dropdown-toggle.show{
+    border-color: $c-green;
+    color: $c-green;
+    background-color: transparent;
+    &:hover, &:active, &:visited{
+        color: $c-blue;
+        background-color: transparent;
+        border-color: $c-blue;
+    }
+    &:focus{
+        box-shadow: 0 0 0 0.25rem rgba(185, 173, 126, 0.15);
+    }
+    &:active:focus{
+        box-shadow: 0 0 0 0.25rem rgba(185, 173, 126, 0.15);
+    }
+}
+
+.dropdown-item{
+    font-weight: 500;
+    &:active, &:hover{
+        background-color: unset;
+        color: $c-green;
+    }
+}
+
+.next, .prev{
+    display: block;
+    position: relative;
+    max-height: 42px;
+    height: 42px;
+    width: 42px;
+    cursor: pointer;
+    background: url(../icons/next.svg) no-repeat;
+    background-position: 50% 50%;
+    z-index: 10;
+    margin-right: 0;
+    outline: none;
+    text-indent: -9999px;
+}
+
+.prev{
+    @include transform(rotate(180deg))
+}

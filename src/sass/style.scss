@@ -1,0 +1,18 @@
+@import 'libs/bootstrap.min';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,800;1,800&display=swap');
+
+
+
+@import 'base/variables';
+@import 'base/mixins';
+
+@import 'blocks/base';
+@import 'blocks/header';
+
+
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}

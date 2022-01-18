@@ -1,0 +1,44 @@
+{
+  "name": "pulse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.8",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.27.7",
+    "cli": "^1.0.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-imagemin": "^6.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.1.1",
+    "gulp-terser": "^2.1.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglify-es": "^3.0.0",
+    "jquery": "^3.6.0",
+    "webpack": "^5.66.0",
+    "webpack-stream": "^7.0.0"
+  },
+  "browserslist": [
+    ">1%"
+  ],
+  "dependencies": {
+    "@splidejs/splide": "^3.6.9",
+    "babel-preset-latest": "^6.24.1",
+    "slick-carousel": "^1.8.1",
+    "slick-slider": "^1.8.2",
+    "tiny-slider": "^2.9.4"
+  }
+}

@@ -1,0 +1,47 @@
+/********************
+** Breakpoints
+********************/
+
+$bp-xsmall:				576;
+$bp-small:		  		768;
+$bp-medium:				992;
+$bp-desktop:			1200;
+$bp-large:				1400;
+$bp-xlarge:				1600;
+
+/********************
+** Media Queries
+********************/
+
+$mq-xsmall:       		"only screen and (min-width: #{$bp-xsmall}px)";
+$mq-small:				"only screen and (min-width: #{$bp-small}px)";
+$mq-medium:				"only screen and (min-width: #{$bp-medium}px)";
+$mq-desktop:			"only screen and (min-width: #{$bp-desktop}px)";
+$mq-large:				"only screen and (min-width: #{$bp-large}px)";
+$mq-xlarge:				"only screen and (min-width: #{$bp-xlarge}px)";
+$mq-retina:				"only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx)";
+
+/********************
+** Fonts
+********************/
+
+$baseFontSize:			16;
+$baseLineHeight:		26;
+
+$f-primary:             'Inter', sans-serif;
+$f-secondary:           'Playfair Display', serif;
+
+
+/********************
+** Colors
+********************/
+
+$c-black:		    #000000;
+$c-white:           #FFFFFF;
+$c-blue:            #141D3B;
+$c-green:           #B9AD7E;
+$c-greenLight:      #F8F6F3;
+$c-blackLight:      #141D3B;
+
+
+
