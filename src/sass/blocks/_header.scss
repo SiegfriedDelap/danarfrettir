@@ -63,3 +63,14 @@ header {
     }
 
 }
+
+.navbar-nav{
+    li{
+        a{
+            color:$c-white;
+            &:hover{
+                color: $c-green;
+            }
+        }
+    }
+}
