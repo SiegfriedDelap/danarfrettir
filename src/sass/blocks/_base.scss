@@ -23,8 +23,12 @@ body {
 ** Colors
 ********************/
 
-.bg-blue{
+.bg-lightBlue{
     @include background-opacity($c-blue, 0.75);
+}
+
+.bg-blue{
+   background-color: $c-blue;
 }
 
 .green-text{
@@ -182,8 +186,15 @@ p{
     }
 }
 
+/********************
+** Something with sliders
+********************/
+
+
 .slider-nav{
-    .next, .prev{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    .next, .prev, .next-card, .prev-card{
         display: block;
         position: relative;
         max-height: 42px;
@@ -198,105 +209,38 @@ p{
         text-indent: -9999px;
     }
     
-    .prev{
+    .prev, .prev-card{
         @include transform(rotate(180deg))
     }    
 }
 
-.inner-slider{
-
-   
-
-    .slick-dots{
-        padding-left: 1rem;
-        position: absolute;
-        bottom: 10px;
-        display: flex;
-        margin: 0;
-        list-style-type: none;
-        right: 50%;
-        @include transform(translateX(-100%));
-        @include bp(medium){
-            left: 0;
-            right: 0;
-            transform: none;
-        }
-        
-       
-        li {
-            margin: 0 5px;
-            z-index: 10;
-        }
-
-        button {
-            display: block;
-            width: 12px;
-            height: 12px;
-            padding: 0;
-
-            border: 1px solid $c-white;
-            @include border-radius(100%);
-            background-color: transparent;
-
-            text-indent: -9999px;
-        }
-
-        li.slick-active button {
-            border: 1px solid $c-green;
-            background-color: $c-green;
-        }
-    }
-
-    .slick-next, .slick-prev{
-        position: absolute !important;
-        bottom: 5px;
-        display: inline-block;
-        position: relative;
-        max-height: 24px;
-        height: 24px;
-        width: 24px;
-        cursor: pointer;
-        background: url(../icons/angle-next.svg) no-repeat;
-        background-position: 50% 50%;
+.slick-dots {
+    position: relative;
+    bottom: 10px;
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+    li {
+        margin: 0 5px;
         z-index: 10;
-        margin-right: 0;
-        outline: none;
+    }
+
+    button {
+        display: block;
+        width: 12px;
+        height: 12px;
+        padding: 0;
+
+        border: 1px solid $c-blue;
+        @include border-radius(100%);
+        background-color: transparent;
+
         text-indent: -9999px;
-        border: none;
-        &:hover{
-            opacity: 0.5;
-        }
-    }
-    
-    .slick-prev{
-
-        right: 50%;
-        @include transform(translateX(600%) rotate(180deg));
-        
-        
-
-        @include bp(medium){
-            right: 34px;
-            @include transform(rotate(180deg));
-        }
-        
-    }
-    .slick-next{
-        
-        right: 50%;
-        transform: translateX(700%);
-      
-        @include bp(medium){
-            right: 10px;
-            transform: none;
-        }
     }
 
-    img{
-        margin: 0 auto;
-        @include bp(medium){
-            margin: unset;
-        }
+    li.slick-active button {
+        border: 1px solid $c-green;
+        background-color: $c-green;
     }
 }
 

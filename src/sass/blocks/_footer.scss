@@ -1,0 +1,42 @@
+footer{
+    padding-top: 85px;
+    padding-bottom: 85px;
+
+    @include bp(small) {
+        padding-top: 102px;
+        padding-bottom: 102px;
+    }
+
+    @include bp(desktop) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+    .footer-wrapper{
+        p{
+            color:$c-white;
+            @include font-size(14);
+            @include line-height(22);
+        }
+        .logo{
+            display: block;
+            margin-bottom: 24px;
+            @include bp(small){
+                margin-bottom: 30px;
+            }
+            @include bp(desktop){
+                margin-bottom: 35px;
+            }
+        }
+        h3{
+            font-style: italic;
+            color: $c-green;
+            margin-bottom: 24px;
+            @include bp(small){
+                margin-bottom: 30px;
+            }
+            @include bp(desktop){
+                margin-bottom: 35px;
+            }
+        }
+    }
+}

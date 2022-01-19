@@ -36,9 +36,12 @@
   ],
   "dependencies": {
     "@splidejs/splide": "^3.6.9",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
     "babel-preset-latest": "^6.24.1",
     "slick-carousel": "^1.8.1",
     "slick-slider": "^1.8.2",
-    "tiny-slider": "^2.9.4"
+    "tiny-slider": "^2.9.4",
+    "wowjs": "^1.1.3"
   }
 }

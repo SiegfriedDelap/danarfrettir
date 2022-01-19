@@ -50,11 +50,12 @@
 		integrity="sha512-06CZo7raVnbbD3BlY8/hGUoUCuhk8sTdVGV3m3nuh9i2R+UmkLbLRTE/My8TuJ3ALbDulhBObJQWtOUt0mXzNQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
 <body>
-	<header class="bg-blue position-absolute">
+	<header class="bg-lightBlue position-absolute">
 		<nav class="navbar navbar-expand-lg" aria-label="Eighth navbar example">
 			<div class="container">
 				<a href="/" class="logo"></a>
@@ -97,23 +98,27 @@
 
 			<div class="row align-items-center">
 
-				<div class="col-12 col-lg-1">
+				<div class="col-6 order-1 col-lg-1 order-lg-1">
 					<div class="slider-nav">
 						<a class="prev" href="#"></a>
 					</div>
 				</div>
 
-				<div class="col-12 col-lg-10">
+				<div class="col-12 order-3 col-lg-10 order-lg-2">
+
+					<div class="carousel-header align-items-center row">
+						<div class="col-lg-7">
+							<h2>Recent Announcements</h2>
+						</div>
+						<div class="col-lg-2 offset-lg-3">
+							<button type="button"
+								class="btn btn-outline-primary green-btn rounded-pill float-lg-end">Sea All</button>
+						</div>
+					</div>
+
 					<div class="outer-slider">
 
 						<div class="outer-wrapper">
-							<div class="outer-header align-items-center row">
-								<div class="col-lg-7">
-									<h2>Recent Announcements</h2>
-								</div>
-								<div class="col-lg-2 offset-lg-3">
-									<button type="button" class="btn btn-outline-primary green-btn rounded-pill float-lg-end">Sea All</button></div>
-							</div>
 							<div class="outer-body row">
 								<div class="col-12 col-lg-6">
 									<div class="outer-body-title">
@@ -137,18 +142,24 @@
 									</div>
 									<div class="outer-body-list">
 										<ul class="d-flex justify-content-between p-0">
-											<li><p>Aliquam dolor nulla.</p></li>
-											<li><p>Enim at volutpat et.</p></li>
-											<li><p>Sit ipsum sed vitae.</p></li>
+											<li>
+												<p>Aliquam dolor nulla.</p>
+											</li>
+											<li>
+												<p>Enim at volutpat et.</p>
+											</li>
+											<li>
+												<p>Sit ipsum sed vitae.</p>
+											</li>
 										</ul>
 									</div>
 									<div class="outer-body-btns">
 										<div class="btn-wrapper">
 											<button type="button"
-											class="btn btn-outline-primary green-btn-active rounded-pill">View
-											more</button>
+												class="btn btn-outline-primary green-btn-active rounded-pill">View
+												more</button>
 										</div>
-									
+
 
 										<div class="dropdown btn-wrapper">
 											<button
@@ -198,13 +209,6 @@
 						</div>
 
 						<div class="outer-wrapper">
-							<div class="outer-header align-items-center row">
-								<div class="col-lg-7">
-									<h2>Recent Announcements</h2>
-								</div>
-								<div class="col-lg-2 offset-lg-3">
-									<button type="button" class="btn btn-outline-primary green-btn rounded-pill float-lg-end">Sea All</button></div>
-							</div>
 							<div class="outer-body row">
 								<div class="col-12 col-lg-6">
 									<div class="outer-body-title">
@@ -228,18 +232,24 @@
 									</div>
 									<div class="outer-body-list">
 										<ul class="d-flex justify-content-between p-0">
-											<li><p>Aliquam dolor nulla.</p></li>
-											<li><p>Enim at volutpat et.</p></li>
-											<li><p>Sit ipsum sed vitae.</p></li>
+											<li>
+												<p>Aliquam dolor nulla.</p>
+											</li>
+											<li>
+												<p>Enim at volutpat et.</p>
+											</li>
+											<li>
+												<p>Sit ipsum sed vitae.</p>
+											</li>
 										</ul>
 									</div>
 									<div class="outer-body-btns">
 										<div class="btn-wrapper">
 											<button type="button"
-											class="btn btn-outline-primary green-btn-active rounded-pill">View
-											more</button>
+												class="btn btn-outline-primary green-btn-active rounded-pill">View
+												more</button>
 										</div>
-									
+
 
 										<div class="dropdown btn-wrapper">
 											<button
@@ -287,14 +297,11 @@
 								</div>
 							</div>
 						</div>
-					
 
-					
-					
 					</div>
 				</div>
 
-				<div class="col-12 col-lg-1">
+				<div class="col-6 order-2 col-lg-1 order-lg-3">
 					<div class="slider-nav float-end">
 						<a class="next" href="#"></a>
 					</div>
@@ -304,37 +311,220 @@
 		</div>
 	</section>
 
-	<section class="cards-carousel">
+	<section class="cards-carousel" data-aos="fade-up">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 offset-lg-1">
+
+					<div class="card-carousel-header row">
+						<div class="col-lg-7 green-text">
+							<h2>Recent Obituaries</h2>
+						</div>
+						<div class="col-lg-2 offset-lg-3">
+							<button type="button"
+								class="btn btn-outline-primary green-btn rounded-pill float-lg-end">Sea All</button>
+						</div>
+					</div>
+
 					<div class="card-slider">
+
 						<div class="card-slider-wrapper">
-							<div class="card-slider-header row">
-								<div class="col-lg-7">
-									<h2>Recent Obituaries</h2>
+
+							<div class="card-slider-body row">
+								<div class="col-lg-6">
+									<div class="card mb-3">
+										<div class="row align-items-start">
+											<div class="col-md-4 head-card">
+												<img src="img/people/girl.png" class="img-fluid" alt="...">
+											</div>
+											<div class="col-md-7 body-card">
+												<h3>Wade Warren</h3>
+												<h4>Facilisis turpis nec quis</h4>
+												<p>Tellus lacus sit justo, in urna tellus interdum. Leo gravida sit
+													sodales lorem in felis. Pellentesque id faucibus amet, nibh cursus
+													lobortis amet nunc. Convallis.</p>
+												<a href='#'>View more</a>
+											</div>
+										</div>
+									</div>
 								</div>
-								<div class="col-lg-2 offset-lg-3">
-									<button type="button" class="btn btn-outline-primary green-btn rounded-pill float-lg-end">Sea All</button>
+								<div class="col-lg-6">
+									<div class="card mb-3">
+										<div class="row align-items-start">
+											<div class="col-md-4 head-card">
+												<img src="img/people/girl.png" class="img-fluid" alt="...">
+											</div>
+											<div class="col-md-7 body-card">
+												<h3>Wade Warren</h3>
+												<h4>Facilisis turpis nec quis</h4>
+												<p>Tellus lacus sit justo, in urna tellus interdum. Leo gravida sit
+													sodales lorem in felis. Pellentesque id faucibus amet, nibh cursus
+													lobortis amet nunc. Convallis.</p>
+												<a href='#'>View more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card mb-3">
+										<div class="row align-items-start">
+											<div class="col-md-4 head-card">
+												<img src="img/people/girl.png" class="img-fluid" alt="...">
+											</div>
+											<div class="col-md-7 body-card">
+												<h3>Wade Warren</h3>
+												<h4>Facilisis turpis nec quis</h4>
+												<p>Tellus lacus sit justo, in urna tellus interdum. Leo gravida sit
+													sodales lorem in felis. Pellentesque id faucibus amet, nibh cursus
+													lobortis amet nunc. Convallis.</p>
+												<a href='#'>View more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card mb-3">
+										<div class="row align-items-start">
+											<div class="col-md-4 head-card">
+												<img src="img/people/girl.png" class="img-fluid" alt="...">
+											</div>
+											<div class="col-md-7 body-card">
+												<h3>Wade Warren</h3>
+												<h4>Facilisis turpis nec quis</h4>
+												<p>Tellus lacus sit justo, in urna tellus interdum. Leo gravida sit
+													sodales lorem in felis. Pellentesque id faucibus amet, nibh cursus
+													lobortis amet nunc. Convallis.</p>
+												<a href='#'>View more</a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-		
-							<div class="card-slider-body">
-		
+
+						</div>
+
+						<div class="card-slider-wrapper">
+
+							<div class="card-slider-body row">
+								<div class="col-lg-6">
+									<div class="card mb-3">
+										<div class="row align-items-start">
+											<div class="col-md-4 head-card">
+												<img src="img/people/girl.png" class="img-fluid" alt="...">
+											</div>
+											<div class="col-md-7 body-card">
+												<h3>Wade Warren</h3>
+												<h4>Facilisis turpis nec quis</h4>
+												<p>Tellus lacus sit justo, in urna tellus interdum. Leo gravida sit
+													sodales lorem in felis. Pellentesque id faucibus amet, nibh cursus
+													lobortis amet nunc. Convallis.</p>
+												<a href='#'>View more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card mb-3">
+										<div class="row align-items-start">
+											<div class="col-md-4 head-card">
+												<img src="img/people/girl.png" class="img-fluid" alt="...">
+											</div>
+											<div class="col-md-7 body-card">
+												<h3>Wade Warren</h3>
+												<h4>Facilisis turpis nec quis</h4>
+												<p>Tellus lacus sit justo, in urna tellus interdum. Leo gravida sit
+													sodales lorem in felis. Pellentesque id faucibus amet, nibh cursus
+													lobortis amet nunc. Convallis.</p>
+												<a href='#'>View more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card mb-3">
+										<div class="row align-items-start">
+											<div class="col-md-4 head-card">
+												<img src="img/people/girl.png" class="img-fluid" alt="...">
+											</div>
+											<div class="col-md-7 body-card">
+												<h3>Wade Warren</h3>
+												<h4>Facilisis turpis nec quis</h4>
+												<p>Tellus lacus sit justo, in urna tellus interdum. Leo gravida sit
+													sodales lorem in felis. Pellentesque id faucibus amet, nibh cursus
+													lobortis amet nunc. Convallis.</p>
+												<a href='#'>View more</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="card mb-3">
+										<div class="row align-items-start">
+											<div class="col-md-4 head-card">
+												<img src="img/people/girl.png" class="img-fluid" alt="...">
+											</div>
+											<div class="col-md-7 body-card">
+												<h3>Wade Warren</h3>
+												<h4>Facilisis turpis nec quis</h4>
+												<p>Tellus lacus sit justo, in urna tellus interdum. Leo gravida sit
+													sodales lorem in felis. Pellentesque id faucibus amet, nibh cursus
+													lobortis amet nunc. Convallis.</p>
+												<a href='#'>View more</a>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
-		
+
 						</div>
-						<div class="slider-nav">
-							<a class="prev-card" href="#"></a>
-							<a class="next-card" href="#"></a>
-						</div>
+
+					</div>
+
+					<div class="slider-nav">
+						<a class="prev-card" href="#"></a>
+						<a class="next-card" href="#"></a>
 					</div>
 				</div>
 			</div>
-			
+
 		</div>
 	</section>
 
+	<footer class="bg-blue" data-aos="fade-up">
+		<div class="container">
+			<div class="row footer-wrapper">
+				<div class="col-lg-3" data-aos="fade-up" data-aos-delay="100">
+					<a href="/" class="logo"></a>
+					<p>Tellus lacus sit justo, in urna tellus interdum. 
+						Leo gravida sit sodales lorem in felis. 
+						Pellentesque id faucibus amet, nibh cursus lobortis amet nunc. 
+						Convallis.</p>
+				</div>
+				<div class="col-lg-2 offset-lg-4" data-aos="fade-up" data-aos-delay="100">
+					<h3>
+						Menu
+					</h3>
+					<p>
+						Tellus lacus sit justo
+						Urna tellus interdum. 
+						Leo gravida sit sodales 
+						lorem in felis.
+					</p>
+				</div>
+				<div class="col-lg-2 offset-lg-1" data-aos="fade-up" data-aos-delay="100">
+					<h3>
+						Contacts
+					</h3>
+					<p>
+						Tellus lacus sit justo
+						Urna tellus interdum. 
+						Leo gravida sit sodales 
+						lorem in felis.
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 
