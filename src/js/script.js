@@ -20,6 +20,7 @@
 		
 		$subslider.slick({
 			initialSlide: 1,
+			dots: true,
 		});
 	}
 

@@ -22,6 +22,7 @@ var __webpack_exports__ = {};
 		
 		$subslider.slick({
 			initialSlide: 1,
+			dots: true,
 		});
 	}
 
